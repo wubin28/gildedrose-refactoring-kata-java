@@ -20,19 +20,6 @@ public class Item {
     }
 
     public void update() {
-        if (name.equals("Aged Brie")) {
-            if (quality < 50) {
-                quality = quality + 1;
-            }
-            sellIn = sellIn - 1;
-            if (sellIn < 0) {
-                // Aged Brie
-                if (quality < 50) {
-                    quality = quality + 1;
-                }
-            }
-            return;
-        }
 
         if (!name.equals("Aged Brie")
                 && !name.equals("Backstage passes to a TAFKAL80ETC concert")) {
