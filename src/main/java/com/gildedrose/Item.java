@@ -22,8 +22,10 @@ public class Item {
     public void update() {
         if (!name.equals("Aged Brie")
                 && !name.equals("Backstage passes to a TAFKAL80ETC concert")
-                && name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-            quality = quality - 1;
+                && !name.equals("Sulfuras, Hand of Ragnaros")) {
+            if (quality > 0) {
+                quality = quality - 1;
+            }
             sellIn = sellIn - 1;
             if (sellIn < 0) {
                 if (quality > 0) {
