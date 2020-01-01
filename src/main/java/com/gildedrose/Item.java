@@ -20,28 +20,6 @@ public class Item {
     }
 
     public void update() {
-        if (name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-            if (quality < 50) {
-                quality = quality + 1;
-                if (sellIn < 11) {
-                    if (quality < 50) {
-                        quality = quality + 1;
-                    }
-                }
-
-                if (sellIn < 6) {
-                    if (quality < 50) {
-                        quality = quality + 1;
-                    }
-                }
-            }
-            sellIn = sellIn - 1;
-            if (sellIn < 0) {
-                quality = quality - quality;
-            }
-            return;
-        }
-
         if (!name.equals("Aged Brie")
                 && !name.equals("Backstage passes to a TAFKAL80ETC concert")) {
             // Normal or Sulfuras
