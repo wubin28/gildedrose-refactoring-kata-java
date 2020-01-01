@@ -20,9 +20,6 @@ public class Item {
     }
 
     public void update() {
-        if (name.equals("Sulfuras, Hand of Ragnaros")) {
-            return;
-        }
 
         if (!name.equals("Aged Brie")
                 && !name.equals("Backstage passes to a TAFKAL80ETC concert")) {
