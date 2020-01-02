@@ -1,5 +1,7 @@
 # gildedrose-refactoring-kata-java
 
+## 需求
+
 Hi and welcome to team Gilded Rose. As you know, we are a small inn with a prime location in a prominent city ran by a friendly innkeeper named Allison. We also buy and sell only the finest goods. Unfortunately, our goods are constantly degrading in quality as they approach their sell by date. We have a system in place that updates our inventory for us. It was developed by a no-nonsense type named Leeroy, who has moved on to new adventures. Your task is to add the new feature to our system so that we can begin selling a new category of items. First an introduction to our system:
 
 - All items have a SellIn value which denotes the number of days we have to sell the item
@@ -40,4 +42,4 @@ Feel free to make any changes to the UpdateQuality method and add any new code a
 
 - “魔法”（Conjured）商品每日品质下降速度是正常商品的2倍
 
-只要一切仍能正常工作，请随时对UpdateQuality()方法进行任何更改，或添加任何新代码。但是，请勿更改Item类或Items属性。因为这些代码属于隔壁的土地爷，他不认可团队代码集体所有这回事。如果这些代码被动了，他会蹦出来揍你（如果愿意的话，可以将UpdateQuality()方法和Items属性设为静态的，我们会代你向他求情）。
+
