@@ -42,4 +42,15 @@ Feel free to make any changes to the UpdateQuality method and add any new code a
 
 - “魔法”（Conjured）商品每日品质下降速度是正常商品的2倍
 
+## 重构步骤
+
+1. 为text test fixture增加测试场景，参见测试决策表
+2. 创建text based approval testing的基准输出文件golden-master.txt
+3. 提取针对一个item的方法updateItem()
+4. 将items[i]使用Introduce parameter提取成方法参数，以便引入接缝，注入子类，实现多态
+5. 将业务逻辑从GildedRose移动到Item类中，以便实现多态；运行TexttestFixture，对比输出
+6. 为分支添加所处理的商品名称注释，以便按商品类型抽取业务逻辑
+7. 选择一种商品，将与其相关的所有业务逻辑复制到方法的头部，以便移动到未来为该商品所创建的类中；运行TexttestFixture，对比输出
+8. 将上述商品作为Item的子类进行创建，并将复制到方法头部的业务逻辑，移动到该子类的同名方法中，进行override；运行TexttestFixture，对比输出
+9. 依此类推，循环往复，直到所有特殊商品的业务逻辑，都被移动到相应的子类中，最后Item的只剩下一般商品的业务逻辑，作为缺省业务逻辑；其间不断运行TexttestFixture，对比输出 
 
