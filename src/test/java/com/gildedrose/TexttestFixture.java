@@ -8,7 +8,7 @@ public class TexttestFixture {
                 new Item("+5 Dexterity Vest", 10, 20), //
                 new Item("+5 Dexterity Vest", 10, 0), //
                 new Item("+5 Dexterity Vest", 0, 3), //
-                new Item("+5 Dexterity Vest", 10, 1), //
+                new Item("+5 Dexterity Vest", 0, 1), //
                 new Item("Elixir of the Mongoose", 5, 7), //
                 new AgedBrie("Aged Brie", 2, 0), //
                 new AgedBrie("Aged Brie", 2, 50), //
@@ -22,7 +22,11 @@ public class TexttestFixture {
                 new BackstagePass("Backstage passes to a TAFKAL80ETC concert", 5, 49),
                 new BackstagePass("Backstage passes to a TAFKAL80ETC concert", 0, 49),
                 // this conjured item does not work properly yet
-                new Item("Conjured Mana Cake", 3, 6)};
+                new Conjured("Conjured Mana Cake", 3, 6),
+                new Conjured("Conjured Mana Cake", 3, 0),
+                new Conjured("Conjured Mana Cake", 0, 6),
+                new Conjured("Conjured Mana Cake", 0, 3)
+        };
 
         GildedRose app = new GildedRose(items);
 
