@@ -6,8 +6,5 @@ public class Sulfuras extends Item {
     }
 
     public void update() {
-        if (name.equals("Sulfuras, Hand of Ragnaros")) {
-            return;
-        }
     }
 }
