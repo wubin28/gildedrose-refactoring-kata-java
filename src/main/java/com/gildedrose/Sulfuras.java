@@ -5,6 +5,7 @@ public class Sulfuras extends Item {
         super(name, sellIn, quality);
     }
 
+    @Override
     public void update() {
     }
 }

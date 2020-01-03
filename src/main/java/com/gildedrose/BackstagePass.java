@@ -5,6 +5,7 @@ public class BackstagePass extends Item {
         super(name, sellIn, quality);
     }
 
+    @Override
     public void update() {
         if (quality < 50) {
             quality = quality + 1;
